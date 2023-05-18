@@ -110,7 +110,10 @@ class ReadTime
     protected function calculateMinutes(): int
     {
         $minutes = floor($this->wordsInContent / $this->wordsPerMinute);
-        return (int) $minutes < 1 ? 1 : $minutes;
+        if ($this->omitSeconds) {
+            $minutes = (int) $minutes < 1 ? 1 : $minutes;
+        }
+        return $minutes;
     }
 
     /**
