@@ -25,9 +25,9 @@
 	    "role": "Developer"
         }
     ],
-	"autoload": {
+    "autoload": {
         "psr-4": {
-            "Mtownsend\\ReadTime\\": "src"
+            "Merauluka\\ReadTime\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -41,13 +41,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Mtownsend\\ReadTime\\Test\\": "tests/"
+            "Merauluka\\ReadTime\\Test\\": "tests/"
         }
     },
     "extra": {
       "laravel": {
         "providers": [
-            "Mtownsend\\ReadTime\\Providers\\ReadTimeServiceProvider"
+            "Merauluka\\ReadTime\\Providers\\ReadTimeServiceProvider"
         ]
       }
     },
