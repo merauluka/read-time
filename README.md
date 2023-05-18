@@ -24,7 +24,7 @@ For Laravel 5.4 and lower, add the following line to your ``config/app.php``:
 /*
  * Package Service Providers...
  */
-Mtownsend\ReadTime\Providers\ReadTimeServiceProvider::class,
+Merauluka\ReadTime\Providers\ReadTimeServiceProvider::class,
 ```
 
 For Laravel 5.5 and greater, the package will auto register the provider for you.
@@ -34,7 +34,7 @@ For Laravel 5.5 and greater, the package will auto register the provider for you
 To register the service provider, add the following line to ``app/bootstrap/app.php``:
 
 ```php
-$app->register(Mtownsend\ReadTime\Providers\ReadTimeServiceProvider::class);
+$app->register(Merauluka\ReadTime\Providers\ReadTimeServiceProvider::class);
 ```
 
 ### Publishing the config file (Laravel)
@@ -42,7 +42,7 @@ $app->register(Mtownsend\ReadTime\Providers\ReadTimeServiceProvider::class);
 ReadTime has special configuration support for Laravel applications. You can publish a single config file and customize how you want your read time text to be displayed.
 
 ````
-php artisan vendor:publish --provider="Mtownsend\ReadTime\Providers\ReadTimeServiceProvider" --tag="read-time-config"
+php artisan vendor:publish --provider="Merauluka\ReadTime\Providers\ReadTimeServiceProvider" --tag="read-time-config"
 ````
 
 These are the contents of the ``read-time.php`` config file:
@@ -77,7 +77,7 @@ return [
 ReadTime supports localization with Laravel. If you are using Laravel you'll likely want to use the premade translations.
 
 ````
-php artisan vendor:publish --provider="Mtownsend\ReadTime\Providers\ReadTimeServiceProvider" --tag="read-time-language-files"
+php artisan vendor:publish --provider="Merauluka\ReadTime\Providers\ReadTimeServiceProvider" --tag="read-time-language-files"
 ````
 
 ## Quick start
@@ -87,7 +87,7 @@ php artisan vendor:publish --provider="Mtownsend\ReadTime\Providers\ReadTimeServ
 Here is an example of the most basic usage:
 
 ```php
-use Mtownsend\ReadTime\ReadTime;
+use Merauluka\ReadTime\ReadTime;
 
 $readTime = (new ReadTime($content))->get();
 ```
@@ -95,7 +95,7 @@ $readTime = (new ReadTime($content))->get();
 You may also pass several arguments to the constructor if you wish to change settings on the fly:
 
 ```php
-use Mtownsend\ReadTime\ReadTime;
+use Merauluka\ReadTime\ReadTime;
 
 $readTime = (new ReadTime($content, $omitSeconds = true, $abbreviated = false, $wordsPerMinute = 230))->get();
 // or
@@ -109,7 +109,7 @@ $readTime = (new ReadTime($content))
 The ReadTime class is able to accept a string of content or a flat array of multiple pieces of content. This may come in handy if you are attempting to display the total read time of body content along with sidebar content. For example:
 
 ```php
-use Mtownsend\ReadTime\ReadTime;
+use Merauluka\ReadTime\ReadTime;
 
 $readTime = (new ReadTime([$content, $moreContent, $evenMoreContent]))->get();
 ```

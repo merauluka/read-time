@@ -2,9 +2,9 @@
 
 if (!function_exists('read_time')) {
     /**
-     * Create a new instance of the Mtownsend\ReadTime\ReadTime class
+     * Create a new instance of the Merauluka\ReadTime\ReadTime class
      *
-     * @return Mtownsend\ReadTime\ReadTime
+     * @return Merauluka\ReadTime\ReadTime
      */
     function read_time($data)
     {

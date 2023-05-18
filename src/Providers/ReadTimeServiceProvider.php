@@ -1,11 +1,11 @@
 <?php
 
-namespace Mtownsend\ReadTime\Providers;
+namespace Merauluka\ReadTime\Providers;
 
 use Exception;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Mtownsend\ReadTime\ReadTime;
+use Merauluka\ReadTime\ReadTime;
 
 class ReadTimeServiceProvider extends ServiceProvider
 {

@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-use Mtownsend\ReadTime\ReadTime;
+use Merauluka\ReadTime\ReadTime;
 
 class ReadTimeTest extends TestCase
 {
