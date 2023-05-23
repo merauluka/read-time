@@ -1,12 +1,11 @@
 <?php
 
-namespace Merauluka\ReadTime;
+namespace MeRauluka\ReadTime;
 
 use Exception;
 
 /**
  * @author Mark Townsend
- *
  */
 class ReadTime
 {
@@ -94,7 +93,7 @@ class ReadTime
      * Abbreviate the minutes/seconds
      *
      * @param  bool $abbreviated
-     * @return \Merauluka\ReadTime\ReadTime
+     * @return \MeRauluka\ReadTime\ReadTime
      */
     public function abbreviated($abbreviated = true)
     {
@@ -242,7 +241,7 @@ class ReadTime
      * Set ltr mode for the read time
      *
      * @param  bool
-     * @return \Merauluka\ReadTime\ReadTime
+     * @return \MeRauluka\ReadTime\ReadTime
      */
     public function ltr(bool $ltr = true)
     {
@@ -254,7 +253,7 @@ class ReadTime
      * Omit seconds from being displayed in the read time result
      *
      * @param  bool $omitSeconds
-     * @return \Merauluka\ReadTime\ReadTime
+     * @return \MeRauluka\ReadTime\ReadTime
      */
     public function omitSeconds(bool $omitSeconds = true)
     {
@@ -304,7 +303,7 @@ class ReadTime
      * Set the read time results to read from right to left
      *
      * @param  bool $rtl
-     * @return Merauluka\ReadTime\ReadTime
+     * @return MeRauluka\ReadTime\ReadTime
      */
     public function rtl(bool $rtl = true)
     {
@@ -316,7 +315,7 @@ class ReadTime
      * Set the translation keys for the read time string
      *
      * @param array $translations An associative array of translation text
-     * @return \Merauluka\ReadTime\ReadTime
+     * @return \MeRauluka\ReadTime\ReadTime
      */
     public function setTranslation(array $translations)
     {
@@ -334,7 +333,7 @@ class ReadTime
      * Determine if any text should accompany the time in the read time
      *
      * @param  bool $timeOnly
-     * @return \Merauluka\ReadTime\ReadTime
+     * @return \MeRauluka\ReadTime\ReadTime
      */
     public function timeOnly(bool $timeOnly = true)
     {
@@ -375,7 +374,7 @@ class ReadTime
      * Set the average words read per minute
      *
      * @param  int $wordsPerMinute
-     * @return \Merauluka\ReadTime\ReadTime
+     * @return \MeRauluka\ReadTime\ReadTime
      */
     public function wpm(int $wordsPerMinute)
     {

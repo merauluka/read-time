@@ -2,9 +2,9 @@
 
 if (!function_exists('read_time')) {
     /**
-     * Create a new instance of the Merauluka\ReadTime\ReadTime class
+     * Create a new instance of the MeRauluka\ReadTime\ReadTime class
      *
-     * @return Merauluka\ReadTime\ReadTime
+     * @return MeRauluka\ReadTime\ReadTime
      */
     function read_time($data)
     {

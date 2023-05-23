@@ -1,11 +1,11 @@
 <?php
 
-namespace Merauluka\ReadTime\Providers;
+namespace MeRauluka\ReadTime\Providers;
 
 use Exception;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Merauluka\ReadTime\ReadTime;
+use MeRauluka\ReadTime\ReadTime;
 
 class ReadTimeServiceProvider extends ServiceProvider
 {

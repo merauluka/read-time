@@ -19,16 +19,16 @@
             "name": "Mark Townsend",
             "email": "mtownsend5512@gmail.com",
             "role": "Developer"
-	},
+        },
         {
-	    "name": "Melissa Bent",
-	    "email": "melissa@torquewebdesign.com",
-	    "role": "Developer"
+            "name": "Melissa Bent",
+            "email": "melissa@torquewebdesign.com",
+            "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Merauluka\\ReadTime\\": "src/"
+            "MeRauluka\\ReadTime\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -38,19 +38,19 @@
         "php": "^7.4|^8.0"
     },
     "require-dev": {
-      "phpunit/phpunit": "^9.3"
+        "phpunit/phpunit": "^9.3"
     },
     "autoload-dev": {
         "psr-4": {
-            "Merauluka\\ReadTime\\Test\\": "tests/"
+            "MeRauluka\\ReadTime\\Test\\": "tests/"
         }
     },
     "extra": {
-      "laravel": {
-        "providers": [
-            "Merauluka\\ReadTime\\Providers\\ReadTimeServiceProvider"
-        ]
-      }
+        "laravel": {
+            "providers": [
+                "MeRauluka\\ReadTime\\Providers\\ReadTimeServiceProvider"
+            ]
+        }
     },
     "minimum-stability": "stable"
 }
