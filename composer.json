@@ -1,5 +1,6 @@
 {
     "name": "merauluka/read-time",
+    "type": "library",
     "description": "A fork of the original PHP package by mtownsend to show users how long it takes to read content.",
     "keywords": [
         "read",
